@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocador de Música - DJ Robô</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DJ Robô - Clube Espacial Zeta</h1>
+        
+        <div class="player">
+            <div class="player-display">
+                <div id="now-playing">Nenhuma música selecionada</div>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="prev-btn" class="control-btn">⏮ Voltar</button>
+                <button id="play-btn" class="control-btn">▶ Tocar</button>
+                <button id="stop-btn" class="control-btn">⏹ Parar</button>
+                <button id="next-btn" class="control-btn">⏭ Próximo</button>
+            </div>
+        </div>
+        
+        <div class="playlist-section">
+            <h2>Playlist</h2>
+            <div class="playlist-actions">
+                <button id="filter-btn">Filtrar</button>
+                <button id="reset-btn">Restaurar</button>
+            </div>
+            <div id="playlist" class="playlist"></div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
